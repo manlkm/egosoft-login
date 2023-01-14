@@ -5,13 +5,13 @@ import '../../node_modules/react-bootstrap-table-next/dist/react-bootstrap-table
 import paginationFactory from 'react-bootstrap-table2-paginator';
 
 const columns = [{
-    dataField: 'userId',
-    text: 'User iD'
+    dataField: 'name',
+    text: '貨品名稱'
 }, {
-    dataField: 'title',
+    dataField: 'price.value',
     text: 'Title'
 }, {
-    dataField: 'completed',
+    dataField: 'price.value',
     text: 'Completed'
 }];
 
@@ -25,7 +25,7 @@ export default class ProductList extends Component {
     }
 
     getProducts = async () => {
-        const url = "/products.json";
+        const url = "/products2.json";
         const obj = {
             method: "GET",
             headers: {
