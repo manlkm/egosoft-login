@@ -1,8 +1,10 @@
-import Login from "./components/Login";
+// import Login from "./components/Login";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
-    <Login />
+    // <Login />
+    <ProductList />
   );
 }
 
